@@ -1,0 +1,12 @@
+@startuml Composicion  
+class Habitacion
+class Casa
+class Empresa
+class Cliente
+
+'Composicion
+Casa *-  Habitacion
+'Agregacion
+Empresa o- Cliente
+
+@enduml

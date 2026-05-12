@@ -1,0 +1,39 @@
+@startuml 
+
+class Vehiculo{
+    -int plazas
+    -String color
+    -String modelo
+    -int año
+    -int llantas
+    +encender()
+    +frenar()
+    +acelerar()
+    +apagar()
+}
+
+class Camioneta{
+    -doube capacidadValde
+    +cargarValde()
+
+}
+class Motocicleta{
+    -String tipoManubrio
+}
+class Automovil{
+    -boolean convertible
+    +abrirTechoPanoramico()
+}
+class Camion{
+    -int capCarga
+    +levantarCabina()
+}
+
+
+
+'Asociaciones
+Vehiculo <|-- Camioneta
+Vehiculo <|-- Motocicleta
+Vehiculo <|-- Automovil
+Vehiculo <|-- Camion
+@enduml
