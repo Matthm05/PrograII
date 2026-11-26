@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Primera Página Web</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 680px;
+      margin: 60px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #1f2328;
+      background-color: #f6f8fa;
+    }
+    .tarjeta {
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    h1 {
+      margin-top: 0;
+      color: #0969da;
+    }
+    button {
+      background-color: #2da44e;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2c974b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tarjeta">
+    <h1>¡Hola desde GitHub Pages!</h1>
+    <p>Esta es una página web de ejemplo creada con HTML, CSS y un poco de JavaScript.</p>
+    
+    <ul>
+      <li><strong>HTML:</strong> Define la estructura y el contenido.</li>
+      <li><strong>CSS:</strong> Controla los colores, fuentes y diseño.</li>
+      <li><strong>JavaScript:</strong> Agrega interactividad.</li>
+    </ul>
+
+    <button onclick="saludar()">Haz clic aquí</button>
+    <p id="mensaje"></p>
+  </div>
+
+  <script>
+    function saludar() {
+      document.getElementById("mensaje").textContent = "¡Funciona! Tu página ya es interactiva.";
+    }
+  </script>
+
+</body>
+</html>
